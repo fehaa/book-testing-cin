@@ -1,12 +1,12 @@
 # Site Settings
 title: Site para teste
 tagline: Descrever algo aqui
-email: galileu.santos@ufpe.br
+email: fhaa@ufpe.br
 description: >
   Este é um site para descrição de como criar um blog
 
 baseurl: "/book-testing-cin"
-url: "https://galilasmb.github.io"
+url: "https://fehaa.github.io"
 permalink: pretty
 #gh_sponsor: chrisrhymes
 #hide_share_buttons: true
@@ -15,12 +15,11 @@ paginate: 5
 paginate_path: "/blog/page:num"
 
 # Disqus Comments
-disqus:
-  # Leave shortname blank to disable comments site-wide.
-  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  # shortname: my_disqus_shortname
-  shortname: csrhymes
-
+# disqus:
+# Leave shortname blank to disable comments site-wide.
+# Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+# shortname: my_disqus_shortname
+# shortname: csrhymes
 
 plugins:
   - jekyll-sitemap
@@ -30,7 +29,7 @@ plugins:
   - kramdown
   - rouge
 
-exclude: 
+exclude:
   - Gemfile
   - clean-theme.gemspec
   - Gemfile.lock
@@ -49,18 +48,16 @@ sass:
 #google_analytics: UA-code-here
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       show_sidebar: true
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
-      author: "Galileu Santos"
+      author: "Fernando Alves"
       layout: post
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
@@ -73,7 +70,7 @@ footer_menu: example_footer_menu
 favicon: /favicon.png
 
 collections:
-  products: 
+  products:
     output: true
     layout: product
     image: https://via.placeholder.com/800x600
